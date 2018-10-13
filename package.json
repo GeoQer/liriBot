@@ -1,0 +1,19 @@
+{
+  "name": "liribot",
+  "version": "1.0.0",
+  "description": "liri personal assistant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoQer/liriBot.git"
+  },
+  "author": "George Deines",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeoQer/liriBot/issues"
+  },
+  "homepage": "https://github.com/GeoQer/liriBot#readme"
+}
