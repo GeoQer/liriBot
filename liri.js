@@ -72,7 +72,9 @@ function movieSearch(){
 
     // Parse the body of the site and recover just the imdbRating
     // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
-    console.log("The movie's rating is: " + JSON.parse(body).imdbRating);
+    console.log("Title: " + JSON.parse(body).title +
+        "\nPlot: " + JSON.parse(body).plot +
+    "\nRating: " + JSON.parse(body).rating);
   }
 });
 }
