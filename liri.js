@@ -7,29 +7,29 @@ let fs = require("fs");
 let userCommand = process.argv[2];
 let userSearch = process.argv.slice(3).join(" ");
 
-var Spotify = require('node-spotify-api');
+let Spotify = require('node-spotify-api');
 let spotify = new Spotify(keys.spotify);
 
 
 function processInput(userCommand) {
     switch (userCommand) {
         case "concert-this":
-            concertSearch();
+            concertSearch(userSearch);
             break;
 
         case "spotify-this-song":
-            songSearch();
+            songSearch(userSearch);
             break;
 
         case "movie-this":
-            movieSearch();
+            movieSearch(userSearch);
             break;
 
         case "do-what-it-says":
             doWhatSays();
             break;
 
-    }
+    }S
 
 }
 
