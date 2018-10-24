@@ -62,13 +62,15 @@ function concertSearch(userSearch) {
 function songSearch() {
 
     spotify
-        .search({ type: 'track', query: "'" + userSearch + "'" })
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (err) {
-            console.log(err);
+        .search({ type: 'track', query: "'" + userSearch + "'" }, function (err, data) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            console.log(data.tracks.items[0].artists[0].name);
         });
+
+    //console.log(data.tracks.items[0].artists[0].name);
 }
 
 function movieSearch() {
